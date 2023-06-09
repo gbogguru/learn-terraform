@@ -4,7 +4,7 @@ resource "aws_instance" "test" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "Gajendra - Terraform"
+    Name = "Test - Terraform"
   }
 }
 
