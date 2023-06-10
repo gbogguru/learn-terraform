@@ -36,6 +36,6 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
-    Name = "sample"
+    Name = "Own-SecurityGroup"
   }
 }
