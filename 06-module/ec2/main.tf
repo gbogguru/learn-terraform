@@ -16,7 +16,7 @@ data "aws_ami" "example" {
 
 
 resource "aws_security_group" "sg" {
-  name        = "sample"
+  name        = "New Security Group"
   description = "Allow TLS inbound traffic"
 
   ingress {
