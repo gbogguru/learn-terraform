@@ -1,3 +1,4 @@
+#Create a EC2 Instance
 data "aws_ec2_spot_price" "example" {
   instance_type     = "t3.medium"
   availability_zone = "us-east-1a"
@@ -8,10 +9,12 @@ data "aws_ec2_spot_price" "example" {
   }
 }
 
+#To print above data properties
 output "price" {
   value = data.aws_ec2_spot_price.example.spot_price
 }
 
+#Security Group which is created
 data "aws_security_group" "selected" {
   name = "allow-all"
 }
