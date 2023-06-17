@@ -1,4 +1,4 @@
-#Create a EC2 Instance
+#Get or Pull the information from existing AWS
 data "aws_ec2_spot_price" "example" {
   instance_type     = "t3.medium"
   availability_zone = "us-east-1a"
@@ -24,6 +24,7 @@ output "sgid" {
 }
 
 data "aws_ami" "example" {
+  #the below id is Centos-8-DevOps-Practice
   owners      = ["973714476881"]
   most_recent = true
   name_regex  = "Centos-8-DevOps-Practice"
