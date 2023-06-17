@@ -1,4 +1,3 @@
-#Other way of EC2 creation using ami from owners and name
 resource "aws_instance" "web" {
   ami           = data.aws_ami.example.id
   instance_type = "t3.micro"

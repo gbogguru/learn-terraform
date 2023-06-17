@@ -1,11 +1,11 @@
 output "sample" {
-  value = "Miyapur Hyderabad"
+  value = "Hello World"
 }
 
 # Any String in terraform need to be quoted with Double quotes only.
 # single quotes are not supported
 
-output "sample9" {
+output "sample1" {
   value = 1000
 }
 
