@@ -7,4 +7,12 @@ resource "aws_instance" "web" {
     Name = "Test - Terraform"
   }
 }
-
+//The above AMI ID from DevOps-Practice in AWS
+/*
+Manual - Instance Creation
+Name
+Image Type
+Server Type
+Key Pair
+Firewall
+/*
