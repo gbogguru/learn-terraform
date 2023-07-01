@@ -22,15 +22,13 @@ resource "null_resource" "ansible" {
 
     inline = [
       "sudo labauto ansible",
-      #"ansible-pull -i localhost, -U https://github.com/raghudevopsb73/roboshop-ansible main.yml -e env=dev -e role_name=${var.name}"
-      "ansible-pull -i localhost, -U https://github.com/gbogguru/roboshop-ansible main.yml -e env=dev -e role_name=${var.name}"
+      "ansible-pull -i localhost, -U https://github.com/raghudevopsb73/roboshop-ansible main.yml -e env=dev -e role_name=${var.name}"
     ]
   }
 }
 
 resource "aws_route53_record" "www" {
-  #zone_id = "Z055331734ICV430E01P7"
-  zone_id = "Z0796719MONYF5JN3P8W"
+  zone_id = "Z055331734ICV430E01P7"
   name    = "${var.name}-dev"
   type    = "A"
   ttl     = 30
@@ -51,7 +49,6 @@ resource "aws_security_group" "sg" {
   ingress {
     from_port   = 0
     to_port     = 0
-    #It will all the ports if we give -1
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }

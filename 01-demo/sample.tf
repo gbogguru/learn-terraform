@@ -6,12 +6,4 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
-//The above AMI ID from DevOps-Practice in AWS
-/*
-Manual - Instance Creation
-Name
-Image Type
-Server Type
-Key Pair
-Firewall
-/*
+

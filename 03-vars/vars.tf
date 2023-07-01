@@ -85,5 +85,4 @@ variable "url" {}
 output "url" {
   value = var.url
 }
-// To execute dev [ centos@workstation ~/learn-terraform/03-vars ]$ terraform apply -auto-approve -var-file=dev.tfvars
-// To execute prod [ centos@workstation ~/learn-terraform/03-vars ]$ terraform apply -auto-approve -var-file=prod.tfvars
+
